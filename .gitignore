@@ -1,3 +1,8 @@
+## Subdirectories
+germany/
+newResumeFormat/
+coverLetters/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
