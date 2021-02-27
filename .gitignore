@@ -3,6 +3,10 @@ germany/
 newResumeFormat/
 coverLetters/
 
+## Misc ignores
+# backup/autosave files
+*.*~
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
