@@ -14,7 +14,7 @@
 % custom bullet for lists
 \newcommand{\customBulletLabel}{\raisebox{0.4ex}{\tiny$\bullet$}}
 % bullet item for tabularx environment that auto-wraps long lines
-\def\detail{\par\noindent\makebox[1em][l]{\customBulletLabel}\hangindent1em}
+\newcommand{\detail}{\par\noindent\makebox[1em][l]{\customBulletLabel}\hangindent1em}
 
 \begin{document}
 \begin{center}
