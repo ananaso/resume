@@ -1,11 +1,11 @@
 \documentclass[11pt]{article}
 \usepackage[margin=0.3in]{geometry}	% set margins (use 1in for submissions)
 \usepackage{xcolor}					% colored hlines
-\usepackage{hyperref}				% url typesetting
 \usepackage{enumitem}				% Manage indentations
 \usepackage{xhfill}                 % Horizontal rules that fill the rest of a line
 \usepackage{tabularx}               % Tabular with X column for auto-wrapping lines
 \usepackage[none]{hyphenat}         % stop words breaking over lines with hyphens
+\usepackage[hidelinks]{hyperref}	% url typesetting
 
 \setlength\parindent{0pt}			% remove indents
 % standard left-column width; ensure it doesn't break dates
@@ -18,145 +18,146 @@
 
 \begin{document}
 \begin{center}
-\begin{minipage}{0.70\textwidth}
-	{\Huge\textbf{Alden Davidson}}
-\end{minipage}%
-\begin{minipage}{0.30\textwidth}
-	\raggedleft
-	adavidson@pm.me\\
-    570-412-3528
-    \url{https://github.com/ananaso}
-\end{minipage}
+    \begin{minipage}{0.80\textwidth}
+        {\Huge\textbf{Alden Davidson}}
+    \end{minipage}%
+    \begin{minipage}{0.20\textwidth}
+        \raggedleft
+        \href{mailto:adavidson@pm.me}{\nolinkurl{adavidson@pm.me}}
+        \href{tel:5704123528}{\nolinkurl{570-412-3528}}
+        \href{https://adavidson.us}{\nolinkurl{adavidson.us}}
+    \end{minipage}
 \end{center}
-%%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%%
-{\Large \textbf{PROFESSIONAL SUMMARY}}\xhrulefill{black!60}{3pt}
-\bigbreak
-\begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    & Software engineering professional with experience developing and designing web applications using TypeScript, React, CSS, Kotlin, and Spring. Adept at developing and deploying backend and frontend systems, responding to and resolving bugs and production issues in low-visibility environment, and identifying further areas of improvement in existing codebases.
-\end{tabularx}
-\bigbreak
 %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%%
 {\Large \textbf{SKILLS}}\xhrulefill{black!60}{3pt}
 \begin{enumerate}[label={}, itemsep=5pt]
     \item \textbf{Languages}: CSS, Kotlin, \LaTeX, TypeScript
     \item \textbf{Software \& Tools}: Azure Kubernetes Services, Docker, Git, GNU/Linux, MySQL, React, Spring Framework
     \item \textbf{Practices}: Continuous Integration, Extreme Programming, Test-Driven Development, User-Centered Design
-    \item \textbf{Foreign Languages}: German (A2/B1), Esperanto (A1)
+    \item \textbf{Foreign Languages}: German (A2/B1)
 \end{enumerate}
 \bigbreak
 %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%%
 {\Large \textbf{WORK HISTORY}}\xhrulefill{black!60}{3pt}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    01/2022 -- Current & \textbf{Full-stack Software Engineer} \\
-    & \textbf{United States Space Force} \textbar{} Los Angeles, CA \\
-    & \detail Developed and sustained two full-stack applications for 1200+ space command and control users requiring worldwide availability \\
-    & \detail Practiced test-driven development at the unit, integration, and end-to-end levels to ensure consistent code quality in continuous integration environment \\
-    & \detail Transitioned two applications from Cloud Foundry to Azure Kubernetes Services as tracers for new pipeline and deployment environment \\
-    & \detail Analyzed existing software implementations to identify areas of improvement \\
-    & \detail Participated in requirements gathering for high-visibility executive-directed action to solidify prerequisites and determine best technical solution to meet user needs
+    01/2022 -- Current & \textbf{SkillBridge Internship: Software Engineer}                                                                                                      \\
+                       & \textbf{Sagely} \textbar{} Remote                                                                                                                       \\
+                       & \detail Built a social learning platform to guide users' professional learning journeys using AI to curate, organize, and contextualize online content. \\
+                       & \detail Worked on the three-developer team in a fast-paced start-up environment                                                                         \\
+                       & \detail Gained valuable, personally novel experience with OpenAI's GPT, React Native, NativeWind, and Expo Application Services
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    04/2020 -- 06/2021 & \textbf{GPS Mission Director} \\
-    & \textbf{United States Space Force} \textbar{} Los Angeles, CA \\
-    & \detail Commanded 12-member team for readiness events and launch \& early orbit operations (L\&EO) \\
-    & \detail Conducted L\&EO for SV05
+    01/2022 -- 02/2024 & \textbf{Full-stack Software Engineer}                                                                                                                                           \\
+                       & \textbf{United States Space Force} \textbar{} Los Angeles, CA                                                                                                                   \\
+                       & \detail Developed and sustained two full-stack applications for 1200+ space command and control users requiring worldwide availability                                          \\
+                       & \detail Practiced test-driven development at the unit, integration, and end-to-end levels to ensure consistent code quality in continuous integration environment               \\
+                       & \detail Transitioned two applications from Cloud Foundry to Azure Kubernetes Services as tracers for new pipeline and deployment environment                                    \\
+                       & \detail Analyzed existing software implementations to identify areas of improvement                                                                                             \\
+                       & \detail Participated in requirements gathering for high-visibility executive-directed action to solidify prerequisites and determine best technical solution to meet user needs
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    11/2019 -- 12/2021 & \textbf{Project Manager} \\
-    & \textbf{United States Space Force} \textbar{} Los Angeles, CA \\
-    & \detail Planned, scheduled, and negotiated \$28M follow-on for \$34M project \\
-    & \detail Monitored project performance to identify areas of improvement and make adjustments \\
-    & \detail Coordinated and led cross-functional team of 8 to resolve project issues and mitigate risks \\
-    & \detail Oversaw 30+ member team of contractors performing software development \\
-    & \detail Provided detailed project status updates to stakeholders and executive management
+    04/2020 -- 06/2021 & \textbf{GPS Mission Director}                                                                      \\
+                       & \textbf{United States Space Force} \textbar{} Los Angeles, CA                                      \\
+                       & \detail Commanded 12-member team for readiness events and launch \& early orbit operations (L\&EO) \\
+                       & \detail Conducted L\&EO for SV05
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    06/2017 -- 12/2017 & \textbf{Robot Programmer Intern} \\
-    & \textbf{RT Leaders} \textbar{} Munich, Germany \\
-    & \detail Worked with 5-member multidisciplinary team to design and build bespoke robotic cell battery construction machine, increasing customer safety and productivity \\
-    & \detail Planned and implemented operations for 12 FANUC unites across a manufacturing line to fit a new product design
+    11/2019 -- 12/2021 & \textbf{Project Manager}                                                                                \\
+                       & \textbf{United States Space Force} \textbar{} Los Angeles, CA                                           \\
+                       & \detail Planned, scheduled, and negotiated \$28M follow-on for \,\$34M project                          \\
+                       & \detail Monitored project performance to identify areas of improvement and make adjustments             \\
+                       & \detail Coordinated and led cross-functional team of 8 to resolve project issues and mitigate risks     \\
+                       & \detail Oversaw 30+ member team of contractors performing software development                          \\
+                       & \detail Provided detailed project status updates to users, executive management, and other stakeholders
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    12/2016 -- 05/2017 & \textbf{Software Development \& Research Intern} \\
-    & \textbf{RIT Computer Engineering Department} \textbar{} Rochester, NY \\
-    & \detail Researched and implemented networking protocols within a virtual domain for realization of real-world radio use cases, using a synthesis of C++ and Python \\
-    & \detail Worked independently with regular progress updates to customer and supervisor 
+    06/2017 -- 12/2017 & \textbf{Robot Programmer Intern}                                                                                                                                       \\
+                       & \textbf{RT Leaders} \textbar{} Munich, Germany                                                                                                                         \\
+                       & \detail Worked with 5-member multidisciplinary team to design and build bespoke robotic cell battery construction machine, increasing customer safety and productivity \\
+                       & \detail Planned and implemented operations for 12 FANUC unites across a manufacturing line to fit a new product design
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    09/2014 -- 05/2018 & \textbf{Student Manager} \\
-    & \textbf{Sol's Underground} \textbar{} Rochester, NY \\
-    & \detail Supervised 4+ student employees per shift \\
-    & \detail Ensured compliance with food safety procedures \\
-    & \detail Managed customer problems and complaints
+    12/2016 -- 05/2017 & \textbf{Software Development \& Research Intern}                                                                                                                   \\
+                       & \textbf{RIT Computer Engineering Department} \textbar{} Rochester, NY                                                                                              \\
+                       & \detail Researched and implemented networking protocols within a virtual domain for realization of real-world radio use cases, using a synthesis of C++ and Python \\
+                       & \detail Worked independently with regular progress updates to customer and supervisor
+\end{tabularx}
+\bigbreak
+\begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
+    09/2014 -- 05/2018 & \textbf{Student Manager}                               \\
+                       & \textbf{Sol's Underground} \textbar{} Rochester, NY    \\
+                       & \detail Supervised 4+ student employees per shift      \\
+                       & \detail Ensured compliance with food safety procedures \\
+                       & \detail Managed customer problems and complaints
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%%
 {\Large \textbf{EDUCATION}}\xhrulefill{black!60}{3pt}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    05/2019 & \textbf{Bachelor of Science: Computer Engineering} \\
-    & \textbf{Rochester Institute of Technology} \textbar{} Rochester, NY \\
-    & \detail Senior Design: Low-cost Fundus Camera, worked with multidisciplinary team to design low-cost functional modern fundus camera capable of capturing screening-quality retinal images \\
-    & \detail Minor in Military Studies \& Leadership \\
-    & \detail GPA 3.55
+    05/2019 & \textbf{Bachelor of Science: Computer Engineering}                                                                                                                                         \\
+            & \textbf{Rochester Institute of Technology} \textbar{} Rochester, NY                                                                                                                        \\
+            & \detail Senior Design: Low-cost Fundus Camera, worked with multidisciplinary team to design low-cost functional modern fundus camera capable of capturing screening-quality retinal images \\
+            & \detail Minor in Military Studies \& Leadership                                                                                                                                            \\
+            & \detail GPA 3.55
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    10/2020 -- 04/2021 & \textbf{Supra Coders Software Development Immersive} \\
-    & \textbf{United States Space Force} \textbar{} Los Angeles, CA \\
-    & \detail 3-month full stack development bootcamp with Defensive Cyber Operations - Satellite follow-on assignment \\
-    & \detail Configured Hack-A-Sat network with Puppet \\
-    & \detail Developed COSMOS TT\&C protocol decoder
+    10/2020 -- 04/2021 & \textbf{Supra Coders Software Development Immersive}                                                             \\
+                       & \textbf{United States Space Force} \textbar{} Los Angeles, CA                                                    \\
+                       & \detail 3-month full stack development bootcamp with Defensive Cyber Operations - Satellite follow-on assignment \\
+                       & \detail Configured Hack-A-Sat network with Puppet                                                                \\
+                       & \detail Developed COSMOS TT\&C protocol decoder
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% PROJECTS/LABS %%%%%%%%%% PROJECTS/LABS %%%%%%%%%% PROJECTS/LABS %%%%%%%%%% PROJECTS/LABS %%%%%%%%%%
 {\Large \textbf{PROJECTS}}\xhrulefill{black!60}{3pt}
 \begin{enumerate}[label={}, itemsep=5pt]
     \item \textbf{AT-AT - Aggregate Tasker Administration Tool}
-    \begin{enumerate}[label={--}]
-        \item Proof-of-Concept to replace Department of Defense's Tasker Management Tool
-        \item Designed and implemented tasker inbox view/response features and accompanying database and API
-        \item Built with Javascript, Express, PostgreSQL, React, and AstroUXDS CSS
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Proof-of-Concept to replace Department of Defense's Tasker Management Tool
+              \item Designed and implemented tasker inbox view/response features and accompanying database and API
+              \item Built with Javascript, Express, PostgreSQL, React, and AstroUXDS CSS
+          \end{enumerate}
     \item \textbf{Low Cost Fundus Camera} \textbar{} Senior Design
-    \begin{enumerate}[label={--}]
-        \item Designed low-cost functional modern fundus camera capable of capturing screening quality retinal images
-        \item Interfaced Raspberry Pi with linear actuators, motor HAT, and controllable LEDs
-        \item Programmed user interface in PyQt
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Designed low-cost functional modern fundus camera capable of capturing screening quality retinal images
+              \item Interfaced Raspberry Pi with linear actuators, motor HAT, and controllable LEDs
+              \item Programmed user interface in PyQt
+          \end{enumerate}
     \item \textbf{Semi-autonomous Cell Battery Constructor}
-    \begin{enumerate}[label={--}]
-        \item Planned and implemented operations for FANUC R-30iB to construct experimental cell batteries
-        \item Designed semi-autonomous function for space-constrained, pumped argon environment
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Planned and implemented operations for FANUC R-30iB to construct experimental cell batteries
+              \item Designed semi-autonomous function for space-constrained, pumped argon environment
+          \end{enumerate}
     \item \textbf{USAF Ribbon Rack Visualizer} \textbar{} Personal Project
-    \begin{enumerate}[label={--}]
-        \item Developed PyQt application for visualizing ribbon racks with proper order of precedence.
-        \item Created with option to extend support to other branches of the military.
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Developed PyQt application for visualizing ribbon racks with proper order of precedence.
+              \item Created with option to extend support to other branches of the military.
+          \end{enumerate}
     \item \textbf{Genesee River Raft} \textbar{} Personal Project
-    \begin{enumerate}[label={--}]
-        \item Constructed raft by hand from fallen timber and rope
-        \item Successfully floated it from RIT to the University of Rochester boathouse
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Constructed raft by hand from fallen timber and rope
+              \item Successfully floated it from RIT to the University of Rochester boathouse
+          \end{enumerate}
 \end{enumerate}
 %%%%%%%%%% ACTIVITIES %%%%%%%%%% ACTIVITIES %%%%%%%%%% ACTIVITIES %%%%%%%%%% ACTIVITIES %%%%%%%%%%
 {\Large \textbf{COMMENDATIONS}}\xhrulefill{black!60}{3pt}
 \begin{enumerate}[label={}]
     \item \textbf{Boy Scouts of America}
-    \begin{enumerate}[label={--}]
-        \item Eagle Scout, Computer Sustainability and Recycling Drive
-        \item Order of the Arrow: Vigil Honor
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Eagle Scout, Computer Sustainability and Recycling Drive
+              \item Order of the Arrow: Vigil Honor
+          \end{enumerate}
     \item \textbf{National German Honor Society}
-    \begin{enumerate}[label={--}]
-        \item Chapter President, 2018-2019
-    \end{enumerate}
+          \begin{enumerate}[label={--}]
+              \item Chapter President, 2018-2019
+          \end{enumerate}
 \end{enumerate}
 \end{document}
