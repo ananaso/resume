@@ -6,6 +6,7 @@
 \usepackage{tabularx}               % Tabular with X column for auto-wrapping lines
 \usepackage[none]{hyphenat}         % stop words breaking over lines with hyphens
 \usepackage[hidelinks]{hyperref}	% url typesetting
+\usepackage{fontawesome5}           % extra symbols/emojis
 
 \pagestyle{empty} % suppress page numbers
 \setlength\parindent{0pt} % remove indents
@@ -16,6 +17,9 @@
 \newcommand{\customBulletLabel}{\raisebox{0.4ex}{\tiny$\bullet$}}
 % bullet item for tabularx environment that auto-wraps long lines
 \newcommand{\detail}{\par\noindent\makebox[1em][l]{\customBulletLabel}\hangindent1em}
+% Scale FontAwesome Icons
+\AddToHook{cmd/faIcon/before}{\begingroup\small}
+\AddToHook{cmd/faIcon/after}{\endgroup}
 
 \begin{document}
 \begin{center}
@@ -24,9 +28,9 @@
     \end{minipage}%
     \begin{minipage}{0.30\textwidth}
         \raggedleft
-        \href{mailto:adavidson@pm.me}{\nolinkurl{adavidson@pm.me}}
-        \href{tel:5704123528}{\nolinkurl{570-412-3528}}
-        \href{https://adavidson.us}{\nolinkurl{adavidson.us}}
+        \href{mailto:adavidson@pm.me}{\nolinkurl{adavidson@pm.me}}~\faIcon{envelope}
+        \href{tel:5704123528}{\nolinkurl{570-412-3528}}~\faIcon{phone-alt}
+        \href{https://adavidson.us}{\nolinkurl{adavidson.us}}~\faIcon{globe}
     \end{minipage}
 \end{center}
 %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%%
