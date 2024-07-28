@@ -20,6 +20,8 @@
 % Scale FontAwesome Icons
 \AddToHook{cmd/faIcon/before}{\begingroup\small}
 \AddToHook{cmd/faIcon/after}{\endgroup}
+% section header command
+\newcommand{\sectionHeader}[1]{{\Large \textbf{#1}}\xhrulefill{black!60}{3pt}\bigbreak}
 
 \begin{document}
 \begin{center}
@@ -34,8 +36,7 @@
     \end{minipage}
 \end{center}
 %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%%
-{\Large \textbf{PROFESSIONAL SUMMARY}}\xhrulefill{black!60}{3pt}
-\bigbreak
+\sectionHeader{PROFESSIONAL SUMMARY}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
      & Software engineering professional with experience developing and designing full-stack applications using modern web technologies.
     Strong interest in continuous learning and using new tools to improve products and processes.
@@ -43,16 +44,14 @@
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%%
-{\Large \textbf{SKILLS}}\xhrulefill{black!60}{3pt}
-\bigbreak
+\sectionHeader{SKILLS}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
      & \textbf{Languages \& Tools}: Azure Kubernetes Services, CSS, Docker, Git, Kotlin, Linux, \LaTeX, React, React Native, Spring, SQL, TypeScript \\
      & \textbf{Practices}: Agile Software Development, Continuous Integration, Extreme Programming, Test-Driven Development, User-Centered Design    \\
 \end{tabularx}
 \bigbreak
-%%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%%
-{\Large \textbf{WORK HISTORY}}\xhrulefill{black!60}{3pt}
-\bigbreak
+%%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%%
+\sectionHeader{WORK HISTORY}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
     Feb 2024 -- Current & \textbf{Software Engineer (SkillBridge Intern)}                                                                                                 \\
                         & \textbf{Sagely} \textbar{} Remote                                                                                                               \\
@@ -79,8 +78,7 @@
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%%
-{\Large \textbf{EDUCATION}}\xhrulefill{black!60}{3pt}
-\bigbreak
+\sectionHeader{EDUCATION}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
     May 2019 & \textbf{Bachelor of Science: Computer Engineering}         \\
              & Rochester Institute of Technology \textbar{} Rochester, NY \\
