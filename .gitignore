@@ -2,9 +2,6 @@
 .idea
 
 ## Misc ignores
-# output directory
-out
-
 # backup/autosave files
 *.*~
 
