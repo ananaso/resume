@@ -1,12 +1,14 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}	% set margins (use 1in for submissions)
+\usepackage{lmodern}				% use Latin Modern font instead of default Computer Modern
+\usepackage[T1]{fontenc}			% for Latin Modern font, T1 encoding so tildes look nice
 \usepackage{xcolor}					% colored hlines
 \usepackage{enumitem}				% Manage indentations
-\usepackage{xhfill}                 % Horizontal rules that fill the rest of a line
-\usepackage{tabularx}               % Tabular with X column for auto-wrapping lines
-\usepackage[none]{hyphenat}         % stop words breaking over lines with hyphens
+\usepackage{xhfill}					% Horizontal rules that fill the rest of a line
+\usepackage{tabularx}				% Tabular with X column for auto-wrapping lines
+\usepackage[none]{hyphenat}			% stop words breaking over lines with hyphens
 \usepackage[hidelinks]{hyperref}	% url typesetting
-\usepackage{fontawesome5}           % extra symbols/emojis
+\usepackage{fontawesome5}			% extra symbols/emojis
 
 \pagestyle{empty} % suppress page numbers
 \setlength\parindent{0pt} % remove indents
@@ -25,64 +27,68 @@
 
 \begin{document}
 \begin{center}
-    \begin{minipage}{0.70\textwidth}
-        {\Huge\textbf{Alden Davidson}}
-    \end{minipage}%
-    \begin{minipage}{0.30\textwidth}
-        \raggedleft
-        \href{mailto:adavidson@pm.me}{\nolinkurl{adavidson@pm.me}}~\faIcon{envelope}
-        \href{tel:5704123528}{\nolinkurl{570-412-3528}}~\faIcon{phone-alt}
-        \href{https://adavidson.us}{\nolinkurl{adavidson.us}}~\faIcon{globe}
-    \end{minipage}
+	\begin{minipage}{0.70\textwidth}
+		{\Huge\textbf{Alden Davidson}}
+	\end{minipage}%
+	\begin{minipage}{0.30\textwidth}
+		\raggedleft
+		\href{mailto:adavidson@pm.me}{\nolinkurl{adavidson@pm.me}}~\faIcon{envelope}
+		\href{tel:5704123528}{\nolinkurl{570-412-3528}}~\faIcon{phone-alt}
+		\href{https://adavidson.us}{\nolinkurl{adavidson.us}}~\faIcon{globe}
+	\end{minipage}
 \end{center}
 %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%% PROFESSIONAL SUMMARY %%%%%%%%%%
 \sectionHeader{PROFESSIONAL SUMMARY}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-     & Software engineering professional with experience developing and designing full-stack applications using modern web technologies.
-    Strong interest in continuous learning and using new tools to improve products and processes.
-    Focused on producing valuable user outcomes through user-centered design.
+	 & Software engineering professional with experience developing full-stack applications using modern web technologies.
+	Strong interest in continuous learning and using or building new tools to improve products and processes.
+	Focused on producing valuable user outcomes with user-centered design.
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%% SKILLS %%%%%%%%%%
 \sectionHeader{SKILLS}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-     & \textbf{Languages \& Tools}: Amazon Web Services, Claude Code, CSS, Docker, Git, Java, \LaTeX, Linux, Neo4j, React, Spring, SQL, TypeScript \\
-     & \textbf{Practices}: Agile Software Development, Continuous Integration, Extreme Programming, Test-Driven Development, User-Centered Design  \\
+	& \textbf{Languages \& Tools}: Amazon Web Services, Claude Code, Docker, Git, Java, \LaTeX, Linux, Neo4j, Playwright, React, Spring, SQL, TypeScript	\\
+	& \textbf{Practices}: Agile Software Development, Continuous Integration, Extreme Programming, Test-Driven Development, User-Centered Design			\\
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%% WORK HISTORY %%%%%%%%%%
-\sectionHeader{WORK HISTORY}
+\sectionHeader{WORK EXPERIENCE}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    Aug 2024 -- Current & \textbf{Senior Software Engineer}                                                                                                         \\
-                        & \textbf{Rise8} \textbar{} Remote                                                                                                                 \\
-                        & \detail Developed Risk Management Framework platform for simplifying and streamlining the continuous authority to operate (cATO) process. \\
-                        & \detail Leveraged Claude Code to recover failing deployment environments and codify configurations in Terraform              \\
+	Apr 2026 -- Present & \textbf{Senior Software Engineer}																																\\
+						& \textbf{Rise8} \textbar{} Remote																																\\
+						& \detail Designed novel end-to-end testing framework for four applications hosted on Palantir Foundry															\\
+						& \detail Automated and interconnected company reporting tasks with bespoke tooling, saving \textasciitilde4.5 man-hours/week and greatly increasing accuracy	\\
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    Feb 2024 -- Aug 2024 & \textbf{Software Engineer (SkillBridge Intern)}                                                                                                 \\
-                         & \textbf{Sagely} \textbar{} Remote                                                                                                                      \\
-                         & \detail Built a social learning platform to guide users' personal and professional learning journeys, using TypeScript, React, and TailwindCSS. \\
-                         & \detail Integrated OpenAI's GPT using LangChain and Jina Reader to organize, curate, and contextualize user content                             \\
-                         & \detail Ensured feature parity on both web and mobile applications to create a consistent user experience                                       \\
+	Aug 2024 -- Apr 2026	& \textbf{Software Engineer}																														\\
+							& \textbf{Rise8} \textbar{} Remote																													\\
+							& \detail Developed Risk Management Framework platform to simplify, streamline, and elucidate the continuous authority to operate (cATO) process	\\
+							& \detail Leveraged Claude Code to recover three failing deployment environments and codify configurations in Terraform								\\
 \end{tabularx}
 \bigbreak
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    Jan 2022 -- Feb 2024 & \textbf{Full-Stack Software Engineer}                                                                                                                              \\
-                         & \textbf{United States Space Force} \textbar{} Los Angeles, CA                                                                                                      \\
-                         & \detail Developed and sustained two full-stack applications, using TypeScript, React, Kotlin, and Spring, to modernize satellite management for 1200+ global users \\
-                         & \detail Transitioned two applications from Cloud Foundry to Azure Kubernetes Services as tracers for new deployment pipeline and environment                       \\
-                         & \detail Led scoping of project to allocate satellite resources from multiple locations, at the request of the USSF Chief of Space Operations                       \\
+	Feb 2024 -- Aug 2024	& \textbf{Software Engineer (SkillBridge Intern)}																									\\
+							& \textbf{Sagely} \textbar{} Remote																													\\
+							& \detail Built a startup social learning platform to guide users' personal and professional learning journeys, on both web and mobile platforms.	\\
+\end{tabularx}
+\bigbreak
+\begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
+	Jan 2022 -- Feb 2024 	& \textbf{Full-Stack Software Engineer}																											\\
+							& \textbf{United States Space Force} \textbar{} Los Angeles, CA																					\\
+							& \detail Developed and sustained two full-stack applications to modernize satellite management for 1200+ global users							\\
+							& \detail Led scoping of project to allocate satellite resources from four locations, at the request of the USSF Chief of Space Operations		\\
 \end{tabularx}
 \bigbreak
 %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%% EDUCATION %%%%%%%%%%
 \sectionHeader{EDUCATION}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    Nov 2025 & \textbf{Certified Kubernetes Administrator} \textbar{} Cert ID: LF-t15c50ihdl        \\
+	Nov 2025 & \textbf{Certified Kubernetes Administrator} \textbar{} Cert ID: LF-t15c50ihdl	\\
 \end{tabularx}
 \begin{tabularx}{\textwidth}{@{}p{\dateColumnWidth}X@{}}
-    May 2019 & \textbf{Bachelor of Science: Computer Engineering}         \\
-             & Rochester Institute of Technology \textbar{} Rochester, NY \\
+	May 2019	& \textbf{Bachelor of Science: Computer Engineering}			\\
+				& Rochester Institute of Technology \textbar{} Rochester, NY	\\
 \end{tabularx}
 \bigbreak
 \end{document}
